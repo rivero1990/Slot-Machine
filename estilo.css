@@ -1,0 +1,200 @@
+body {
+    background-image: url(casino.jpg);
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    place-content: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    background: linear-gradient(blueviolet, magenta);
+    margin: 0;
+    padding: 25px;
+}
+
+.maquina-slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: indigo;
+    outline: 10px solid rgba(255, 0, 0, 0.5); 
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5);
+    width: 450px;
+    margin-left: 520px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#contenedor-ganancias {
+    border: 3px solid black;
+    margin-top: 10px;
+    width: 400px;
+    height: 80px;
+    align-items: center;
+    margin-left: 560px;
+    background-color: coral;
+}
+
+#titulo-ganancias {
+    margin-top: auto;
+    margin-left: 150px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.reel {
+    width: 130px;
+    height: 300px;
+    border-top: 8px solid #888;
+    border-bottom: 8px solid #555;
+    border-radius: 5px;
+    margin: 0 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+
+.simbolo {
+    margin: 5px 0;
+    flex-direction: column;
+}
+
+.comprar-monedas {
+    position: fixed;
+    text-align: center;
+    font-size: large;
+    margin-left: 20px;
+    margin-top: 230px;
+    place-content: center;
+    display: grid;
+    background: linear-gradient(lawngreen, bisque);
+    padding: 4.5px;
+    border-radius: 5px;
+    height: 296px;
+}
+
+.comprar-monedas button {
+    background-color: yellow;
+    border: 2px solid black;
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 175px;
+    margin-top: 15px;
+}
+
+.informacion-juego {
+    position: fixed;
+    text-align: center;
+    font-size: large;
+    margin-left: 1020px;
+    margin-top: 230px;
+    place-content: center;
+    display: grid;
+    background: linear-gradient(hotpink, beige);
+    padding: 7px;
+    border-radius: 5px;
+    width: 474.45px;
+    height: 290px;
+}
+
+.contenedor-juego {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#cantidad-monedas {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: mediumslateblue;
+    width: 150px;
+    text-align: center;
+    height: 65px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+#devcoins {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    margin-top: 9px;
+}
+
+#saldo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    margin-top: 9px;
+}
+
+#parrafo-monedas {
+    background-color: lightseagreen;
+    margin: auto;
+}
+
+
+#cantidad-saldo {
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: mediumslateblue;
+    width: 150px;
+    text-align: center;
+    height: 65px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+#parrafo-saldo {
+    background-color: lightseagreen;
+    margin: auto;
+}
+
+
+#contenedor-boton {
+    margin-top: 25px;
+    margin-left: 210px;
+}
+
+#boton-slot {
+    font-size: large;
+    border: 10px solid rgb(69, 63, 63);
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background: linear-gradient(to bottom, #f1c40f, #e74c3c); 
+}
+
+#boton-continuar {
+    font-size: large;
+    background: linear-gradient(royalblue, silver);
+    margin-top: 50px;
+    margin-left: 210px;
+    width: 150px; 
+    height: 65px;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
+
+#boton-salir {
+    font-size: large;
+    background: linear-gradient(to bottom, rgb(238, 72, 72),  #e74c3c);
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 150px; 
+    height: 65px;
+    border: 2px solid black;
+    border-radius: 5px; 
+}
