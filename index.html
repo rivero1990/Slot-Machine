@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maquina Tragamonedas</title>
+    <title>Machine slot</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
 
     <div class="comprar-monedas">
-        <p>¡Compra Devcoins!</p>
-        <p>1 Devcoin = $50 pesos</p>
-        <p>Selecciona :</p>
+        <p>¡Buys Devcoins!</p>
+        <p>1 Devcoin = $50 Dollars</p>
+        <p>Choose :</p>
         <form>
             <label>
                 <input type="checkbox" name="cantidad" value="5">
@@ -32,55 +32,46 @@
                 30 Devcoins
             </label>
         </form>
-        <button onclick="actualizarCantidadMonedas()">Comprar</button>
+        <button type="button" onclick="actualizarCantidadMonedas()">Buy</button>
     </div>
 
     <div class="informacion-juego">
-        <p>Información Importante:</p>
-        <p>Limite de saldo $50 el valor de una devcoin si lo alcanza se le regala una tirada gratis</p>
-        <p>Si compra 30 devcoins puede continuar con su historial de jugadas</p>
-        <p>!!!Mucha Suerte!!</p>
+        <p>Important Information:</p>
+        <p>Balance limit of 50 dollars if you reach it you will recieve a free spin</p>
+        <p>If you buy 30 devcoins you can continue with your play history</p>
+        <p>!!!Good luck!!</p>
     </div>
 
     <div>
-        <h1>Bienvenido al casino : "La Buena Fortuna"</h1>
+        <h1>Welcome to the casino : "Good Fortune"</h1>
 
         <div id="contenedor-ganancias">
-            <p id="titulo-ganancias">Ganancias</p>
+            <p id="titulo-ganancias">Profits</p>
         </div>
 
         <div class="maquina-slot">
-            
-            <div class="reel">
-                <div class="simbolo">🍎</div>
-                <div class="simbolo">🍒</div>
-                <div class="simbolo">🦁</div>
-                <div class="simbolo">🍊</div>
-                <div class="simbolo">7️⃣</div>
-                <div class="simbolo">🐘</div>
+           
+            <div id="app">
+                <div class="doors">
+                  <div class="door">
+                    <div class="boxes">
+                    </div>
+                  </div>
+              
+                  <div class="door">
+                    <div class="boxes">
+                      
+                    </div>
+                  </div>
+              
+                  <div class="door">
+                    <div class="boxes">
+                      
+                    </div>
+                  </div>
+                </div>
+              
             </div>
-            
-            <div class="reel">
-                <div class="simbolo">🍊</div>
-                <div class="simbolo">🐴</div>
-                <div class="simbolo">🍒</div>
-                <div class="simbolo">🍇</div>
-                <div class="simbolo">🦁</div>
-                <div class="simbolo">🍋</div>
-                
-            </div>
-            
-            <div class="reel">
-                <div class="simbolo">🍎</div>
-                <div class="simbolo">7️⃣</div>
-                <div class="simbolo">🍇</div>
-                <div class="simbolo">🍋</div>
-                <div class="simbolo">🐘</div>
-                <div class="simbolo">🍒</div>
-                
-            </div>
-        
-        </div>
     </div>
 
     <div class="contenedor-juego">
@@ -91,24 +82,25 @@
         </div>
 
         <div id="cantidad-saldo">
-            <p id="parrafo-saldo">Saldo</p>
+            <p id="parrafo-saldo">Balance</p>
             <p id="saldo">$</p>
         </div>
 
         <div id="contenedor-boton">
-            <button id="boton-slot" onclick="">Girar</button>
-        </div>
+            <button id="spinner">Spin</button>
+          </div>
 
         <div id="contenedor-continuar">
-            <button id="boton-continuar" onclick="">Continuar</button>
+            <button id="boton-continuar" onclick="">Continue</button>
         </div>
 
         <div id="contenedor-salir">
-            <button id="boton-salir" onclick="">Salir</button>
+            <button id="boton-salir" onclick="">Go Out</button>
         </div>
 
     </div>
 
+    
     <script src="script.js"></script>
 </body>
 
