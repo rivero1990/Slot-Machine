@@ -30,6 +30,7 @@ h1 {
 
 #contenedor-ganancias {
     border: 3px solid black;
+    border-radius: 3px;
     margin-top: 10px;
     width: 400px;
     height: 80px;
@@ -45,22 +46,6 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.reel {
-    width: 250px;
-    height: 300px;
-    border-top: 8px solid #888;
-    border-bottom: 8px solid #555;
-    border-radius: 5px;
-    margin: 0 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    background-color: aliceblue;
-    overflow: hidden;
-}
 
 .comprar-monedas {
     position: fixed;
@@ -191,22 +176,13 @@ h1 {
     border: 2px solid black;
     border-radius: 5px; 
 }
+  
+.doors {
+    display: flex;
+}
+  
 
-#app {
-    width: 100%;
-    height: 100%;
-    background: #1a2b45;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .doors {
-    display: flex;
-  }
-  
-  .door {
+.door {
     display: inline-block;
     background: #fafafa;
     border-top: 8px solid #888;
@@ -234,4 +210,9 @@ h1 {
     margin: 1rem 0 2rem 0;
   }
   
+ #ganancias {
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+ } 
   
