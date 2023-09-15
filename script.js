@@ -19,17 +19,19 @@ function actualizarCantidadMonedas() {
   checkboxInputs.forEach(function (checkbox) {
     if (checkbox.checked) {
       totalDevcoins = parseInt(checkbox.value);
-
-      checkboxInputs.forEach(function (checkbox) {
-        checkbox.disabled = true;
-      });
-
-      buyBoton.disabled = true; 
     }
   });
 
-  paragraphDevcoins.textContent = totalDevcoins;
-  actualizarCantidadSaldo(totalDevcoins);
+  if (totalDevcoins > 0) {
+    checkboxInputs.forEach(function (checkbox) {
+      checkbox.disabled = true;
+    });
+
+    buyBoton.disabled = true;
+
+    paragraphDevcoins.textContent = totalDevcoins;
+    actualizarCantidadSaldo(totalDevcoins);
+  }
 }
 
 
@@ -157,6 +159,25 @@ function actualizarCantidadSaldo(devcoins) {
 
   init();
 })();
+
+
+function continueGame() {
+  
+  if (parseInt(paragraphDevcoins.textContent) === 0) {
+    checkboxInputs.forEach(function (checkbox) {
+      checkbox.disabled = false; 
+    });
+    buyBoton.disabled = false; 
+  }
+}
+
+
+
+
+
+
+
+
 
 
 

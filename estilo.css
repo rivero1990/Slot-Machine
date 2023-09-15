@@ -1,5 +1,5 @@
 body {
-    background-image: url(casino.jpg);
+    background-image: url(casino_background.png);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ h1 {
     height: 80px;
     align-items: center;
     margin-left: 560px;
-    background-color: coral;
+    background: linear-gradient(rgb(80, 229, 232), rgb(3, 248, 109));
 }
 
 #titulo-ganancias {
@@ -50,15 +50,16 @@ h1 {
 .comprar-monedas {
     position: fixed;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     margin-left: 20px;
-    margin-top: 230px;
+    margin-top: 220px;
     place-content: center;
     display: grid;
-    background: linear-gradient(lawngreen, bisque);
-    padding: 4.5px;
+    background: linear-gradient(rgb(229, 56, 56), bisque);
+    padding: 1.5px;
     border-radius: 5px;
-    height: 296px;
+    height: 270px;
+    width: 470px;
 }
 
 .comprar-monedas button {
@@ -67,23 +68,23 @@ h1 {
     width: 120px;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-left: 175px;
+    margin-left: 155px;
     margin-top: 15px;
 }
 
 .informacion-juego {
     position: fixed;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     margin-left: 1020px;
-    margin-top: 230px;
+    margin-top: 220px;
     place-content: center;
     display: grid;
     background: linear-gradient(hotpink, beige);
-    padding: 7px;
+    padding: 1.5px;
     border-radius: 5px;
-    width: 474.45px;
-    height: 290px;
+    width: 470px;
+    height: 270px;
 }
 
 .contenedor-juego {
