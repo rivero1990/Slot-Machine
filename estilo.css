@@ -13,71 +13,90 @@ h1 {
     padding: 25px;
 }
 
-.maquina-slot {
+#container-1 {
+    display: grid;
+    place-content: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.machine-slot {
+    place-content: center;
+    display: grid;
     margin-top: 40px;
     background-color: indigo;
     outline: 10px solid rgba(255, 0, 0, 0.5); 
     box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.5);
-    width: 450px;
-    margin-left: 520px;
+    width: 400px;
     padding: 10px;
     border-radius: 5px;
 }
 
 
-#contenedor-ganancias {
+#container-profits {
     border: 3px solid black;
+    padding: 5px;
     border-radius: 3px;
-    margin-top: 10px;
-    width: 400px;
-    height: 80px;
-    align-items: center;
-    margin-left: 560px;
+    margin-top: 5px;
+    place-content: center;
+    display: grid;
     background: linear-gradient(rgb(80, 229, 232), rgb(3, 248, 109));
+    margin: 5px auto 0 auto;
+    width: 300px;
 }
 
-#titulo-ganancias {
-    margin-top: auto;
-    margin-left: 165px;
+#tittle-profits {
     font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+#p-profits {
+    margin-top: auto;
+}
+
+#profits {
+    place-content: center;
+    display: grid;
+    font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.comprar-monedas {
-    position: fixed;
+.buy-coins {
+    position: absolute;
     text-align: center;
     font-size: medium;
-    margin-left: 20px;
-    margin-top: 220px;
-    place-content: center;
     display: grid;
     background: linear-gradient(rgb(229, 56, 56), bisque);
     padding: 1.5px;
     border-radius: 5px;
     height: 270px;
     width: 470px;
+    margin: 30px;
+    left: 0;
 }
 
-.comprar-monedas button {
+#button-buy {
+    place-content: center;
+    display: grid;
+}
+
+#button-devcoins {
     background-color: yellow;
     border: 2px solid black;
     width: 120px;
     padding: 10px 20px;
     border-radius: 5px;
-    margin-left: 155px;
-    margin-top: 15px;
 }
 
-.informacion-juego {
-    position: fixed;
+.information-game {
+    position: absolute;
+    right: 0;
     text-align: center;
     font-size: medium;
-    margin-left: 1020px;
-    margin-top: 220px;
+    margin: 30px;
     place-content: center;
     display: grid;
     background: linear-gradient(hotpink, beige);
@@ -87,22 +106,41 @@ h1 {
     height: 270px;
 }
 
-.contenedor-juego {
+#container-game {
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
 }
 
-#cantidad-monedas {
+
+#container-2 {
+    position: absolute;
+    left: 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#container-3 {
+    position: absolute;
+    right: 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#amount-coins {
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: mediumslateblue;
     width: 150px;
     text-align: center;
     height: 65px;
-    margin-top: 50px;
-    margin-left: 100px;
     border-radius: 4px;
     border: 2px solid black;
+    margin-right: 100px;
 }
 
 #devcoins {
@@ -111,40 +149,42 @@ h1 {
     margin-top: 9px;
 }
 
-#saldo {
+#balance {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
     margin-top: 9px;
 }
 
-#parrafo-monedas {
+#p-coins{
     background-color: lightseagreen;
     margin: auto;
 }
 
 
-#cantidad-saldo {
+#amount-balance {
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: mediumslateblue;
     width: 150px;
     text-align: center;
     height: 65px;
-    margin-top: 50px;
-    margin-left: 90px;
     border-radius: 4px;
     border: 2px solid black;
 }
 
-#parrafo-saldo {
+#p-balance {
     background-color: lightseagreen;
     margin: auto;
 }
 
 
-#contenedor-boton {
+#container-button-spin {
     margin-top: 25px;
-    margin-left: 210px;
+    place-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #spinner {
@@ -153,25 +193,22 @@ h1 {
     width: 100px; 
     height: 100px; 
     border-radius: 50%; 
-    background: linear-gradient(to bottom, #f1c40f, #e74c3c); 
+    background: linear-gradient(to bottom, #f1c40f, #e74c3c);
 }
 
-#boton-continuar {
+#button-continue {
     font-size: large;
     background: linear-gradient(royalblue, silver);
-    margin-top: 50px;
-    margin-left: 210px;
     width: 150px; 
     height: 65px;
     border: 2px solid black;
-    border-radius: 5px; 
+    border-radius: 5px;
+    margin-right: 100px; 
 }
 
-#boton-salir {
+#button-leave {
     font-size: large;
     background: linear-gradient(to bottom, rgb(238, 72, 72),  #e74c3c);
-    margin-top: 50px;
-    margin-left: 100px;
     width: 150px; 
     height: 65px;
     border: 2px solid black;
@@ -194,26 +231,22 @@ h1 {
     position: relative;
     border-radius: 5px;
     margin: 1px;
-  }
+}
   
-  .boxes {
+.boxes {
     transition: transform 1s ease-in-out;
-  }
+}
   
-  .box {
+.box {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-  }
-  
-  .buttons {
-    margin: 1rem 0 2rem 0;
-  }
+}
   
  #ganancias {
-    text-align: center;
     font-size: larger;
     font-family: Arial, Helvetica, sans-serif;
- } 
-  
+    display: grid;
+    place-content: center;
+} 
